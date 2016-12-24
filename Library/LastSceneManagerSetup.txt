@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/IIDXTitle.unity
+  isLoaded: 1
+  isActive: 1
