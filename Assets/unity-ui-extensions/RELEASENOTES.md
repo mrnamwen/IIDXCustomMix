@@ -2,16 +2,53 @@
 This file contains the up to date release notes for each release of the UI Extensions project including release videos where required.
 
 ----------------
+##Update 1.2##
+[![View 1.2 update Video](http://img.youtube.com/vi/cWv0A6rEEc8/0.jpg)](https://www.youtube.com/watch?v=cWv0A6rEEc8 "Update 1.2 for the Unity UI Extensions Project")
+
+###New / updated features###
+* Major updates to the Horizontal and Vertical Scroll Snap controls
+* Replacement HSV/Color picker control (and new Box Slider control)
+* Fixes / updates to the TextPic control
+* Updates to SoftAlphaUI script - improved Text / worldspace support
+* Updates to Extensions Toggle - Adds ID and event to publish ID on change
+* New Gadient control (gradient 2)
+* New UI ScrollRect Occlusion utility
+* New UI Tween Scale utility
+* New UI Infinite ScrollRect
+* New Table Layout Group
+* New Non Drawing Graphic Control
+
+###Fixes###
+* H&V Scroll Snap indexing issues
+* H&V Scroll Snap performance updates 
+* H&V Scroll Snap Long swipe behavior updated
+* H&V Scroll Snap support for Rect Resizing
+* TextPic Set set before draw issues
+* HSV picker replaced with more generic color picker
+
+###Known issues###
+* The Image_Extended control has been removed due to Unity upgrade issues. Will return in a future update.
+
+##Upgrade Notes##
+Although not specifically required, it is recommended to remove the old UI Extensions folder before importing the new asset
+The HSS picker especially had a lot of file changes in this update.
+
+>**Note** In Unity 5.5 the particle system was overhauled and several methods were marked for removal. However, the UI Particle System script currently still uses them
+> Either ignore these errors or remove the *_UIParticleSystem_* script in the "*Unity UI Extensions / Scripts / Effects*" folder
+
+----------------
 ##Update 1.1##
 
 [![View 1.1 update Video](http://img.youtube.com/vi/JuE0ja5DmV4/0.jpg)](https://www.youtube.com/watch?v=JuE0ja5DmV4 "Update 1.1 for the Unity UI Extensions Project")
+> **Note** for 4.6 / 5.1, some features will not be available due to their incompatibility.
+> Also the Line Renderer remains unchanged in these releases as the updates do not work with the older system
 
 ###New / updated features###
 * New Polygon primitive
 * New UI Vertical Scroller control
 * New Curved layout component
 * New Shining effect
-* New UI Particle system
+* New UI Particle system **<-5.3+ only**
 * New Scroll Conflict Manager
 * Soft Alpha Mask updated in line with SAUI 1.3 release
 * Line Renderer has had a complete overhaul, including full programmatic support, Line list and Bezier line rendering
@@ -25,7 +62,10 @@ This file contains the up to date release notes for each release of the UI Exten
 * Scroll Snaps updates to better handle children.
 * Scroll Snaps distribute function updated so it can be called onDirty more efficiently.
 
-
+##Upgrade Notes##
+Two scripts were moved and need their originals need deleting post upgrade.  Please remove the following files:
+* Scripts\ImageExtended
+* Scripts\UIImageCrop
 
 ----------------
 ##Update 1.0.6.1##
